@@ -65,11 +65,21 @@
 
         Button {
             bindings = <
-&trans  &kp K_UNDO  &kp LS(DEL)     &kp LC(INS)  &kp LS(INS)  &kp K_AGAIN    &trans  &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DELETE)  &kp K_UNDO  &trans
-&trans  &kp LGUI    &kp LALT        &kp LCTRL    &kp LSHFT    &trans         &trans  &trans       &kp LSHFT    &kp LCTRL    &kp LALT        &kp LGUI    &trans
-&trans  &kp K_UNDO  &kp LS(DELETE)  &kp LC(INS)  &kp LS(INS)  &kp K_AGAIN    &trans  &kp K_AGAIN  &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)     &kp K_UNDO  &trans
-                    &trans          &mkp MB3     &mkp MB1     &mkp MB2       &trans  &mkp MB2     &mkp MB1     &mkp MB3
-                                                                             &trans
+&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_AGAIN    &trans  &kp K_AGAIN  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
+&trans  &kp LGUI    &kp LALT   &kp LCTRL   &kp LSHFT    &trans         &trans  &trans       &kp LSHFT    &kp LCTRL   &kp LALT   &kp LGUI    &trans
+&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_AGAIN    &trans  &kp K_AGAIN  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
+                    &trans     &mkp MB3    &mkp MB1     &mkp MB2       &trans  &mkp MB2     &mkp MB1     &mkp MB3
+                                                                       &trans
+            >;
+        };
+
+        Nav {
+            bindings = <
+&trans  &bootloader  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+                                                       &trans
             >;
         };
     };
