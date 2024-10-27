@@ -53,11 +53,11 @@
 
         Base {
             bindings = <
-&trans  &kp Q       &kp W       &kp F        &kp P         &kp B      &trans   &kp J    &kp L         &kp U         &kp Y         &kp SINGLE_QUOTE  &trans
-&trans  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHIFT T  &kp G      &trans   &kp M    &mt LSHIFT N  &mt LSHIFT E  &mt LALT I    &mt LGUI O        &trans
-&trans  &lt 1 Z     &mt RALT X  &kp C        &kp D         &kp V      &trans   &kp K    &kp H         &kp COMMA     &mt RALT DOT  &lt 1 SLASH       &trans
-                    &trans      &kp ESCAPE   &kp SPACE     &kp TAB    &trans   &kp RET  &kp BSPC      &kp DEL
-                                                                      &kp RET
+&trans  &kp Q       &kp W       &kp F        &kp P         &kp B      &kp UP_ARROW      &kp J      &kp L         &kp U         &kp Y         &kp SINGLE_QUOTE  &trans
+&trans  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHIFT T  &kp G      &kp DOWN_ARROW    &kp M      &mt LSHIFT N  &mt LSHIFT E  &mt LALT I    &mt LGUI O        &trans
+&trans  &lt 1 Z     &mt RALT X  &kp C        &kp D         &kp V      &kp LEFT_ARROW    &kp K      &kp H         &kp COMMA     &mt RALT DOT  &lt 1 SLASH       &trans
+                    &trans      &kp ESCAPE   &kp SPACE     &kp TAB    &kp RIGHT_ARROW   &kp ENTER  &kp BSPC      &kp DEL
+                                                                      &kp ENTER
             >;
 
             label = "colemak_dh";
@@ -66,21 +66,21 @@
 
         Button {
             bindings = <
-&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_AGAIN    &trans  &kp K_AGAIN  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
-&trans  &kp LGUI    &kp LALT   &kp LCTRL   &kp LSHFT    &trans         &trans  &trans       &kp LSHFT    &kp LCTRL   &kp LALT   &kp LGUI    &trans
-&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_AGAIN    &trans  &kp K_AGAIN  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
-                    &trans     &mkp MB3    &mkp MB1     &mkp MB2       &trans  &mkp MB2     &mkp MB1     &mkp MB3
-                                                                       &trans
+&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_AGAIN    &mmv MOVE_UP     &kp K_AGAIN  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
+&trans  &kp LGUI    &kp LALT   &kp LCTRL   &kp LSHFT    &trans         &mmv MOVE_DOWN   &trans       &kp LSHFT    &kp LCTRL   &kp LALT   &kp LGUI    &trans
+&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_AGAIN    &mmv MOVE_LEFT   &kp K_AGAIN  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
+                    &trans     &mkp MB3    &mkp MB1     &mkp MB2       &mmv MOVE_RIGHT  &mkp MB2     &mkp MB1     &mkp MB3
+                                                                       &mkp LCLK
             >;
         };
 
         Nav {
             bindings = <
-&trans  &bootloader  &trans    &trans     &trans     &trans    &trans  &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
-&trans  &kp LGUI     &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &kp CAPS    &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &trans
-&trans  &trans       &trans    &trans     &trans     &trans    &trans  &kp INS     &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &trans
-                     &trans    &trans     &trans     &trans    &trans  &trans      &trans       &trans
-                                                               &trans
+&trans  &bootloader  &trans    &trans     &trans     &trans    &mmv MOVE_UP     &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
+&trans  &kp LGUI     &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &mmv MOVE_DOWN   &kp CAPS    &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &trans
+&trans  &trans       &trans    &trans     &trans     &trans    &mmv MOVE_LEFT   &kp INS     &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &trans
+                     &trans    &trans     &trans     &trans    &mmv MOVE_RIGHT  &trans      &trans       &trans
+                                                               &mkp LCLK    
             >;
         };
     };
