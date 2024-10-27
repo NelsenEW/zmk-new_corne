@@ -53,14 +53,15 @@
 
         Base {
             bindings = <
-&trans  &kp Q       &kp W       &kp F        &kp P         &kp B      &trans  &kp J    &kp L         &kp U         &kp Y         &kp SINGLE_QUOTE  &trans
-&trans  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHIFT T  &kp G      &trans  &kp M    &mt LSHIFT N  &mt LSHIFT E  &mt LALT I    &mt LGUI O        &trans
-&trans  &lt 1 Z     &mt RALT X  &kp C        &kp D         &kp V      &trans  &kp K    &kp H         &kp COMMA     &mt RALT DOT  &lt 1 SLASH       &trans
-                    &trans      &kp ESCAPE   &kp SPACE     &kp TAB    &trans  &kp RET  &kp BSPC      &kp DEL
-                                                                      &trans
+&trans  &kp Q       &kp W       &kp F        &kp P         &kp B      &trans   &kp J    &kp L         &kp U         &kp Y         &kp SINGLE_QUOTE  &trans
+&trans  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHIFT T  &kp G      &trans   &kp M    &mt LSHIFT N  &mt LSHIFT E  &mt LALT I    &mt LGUI O        &trans
+&trans  &lt 1 Z     &mt RALT X  &kp C        &kp D         &kp V      &trans   &kp K    &kp H         &kp COMMA     &mt RALT DOT  &lt 1 SLASH       &trans
+                    &trans      &kp ESCAPE   &kp SPACE     &kp TAB    &trans   &kp RET  &kp BSPC      &kp DEL
+                                                                      &kp RET
             >;
 
             label = "colemak_dh";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         Button {
@@ -75,11 +76,11 @@
 
         Nav {
             bindings = <
-&trans  &bootloader  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-                                                       &trans
+&trans  &bootloader  &trans    &trans     &trans     &trans    &trans  &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &trans
+&trans  &kp LGUI     &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &kp CAPS    &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &trans
+&trans  &trans       &trans    &trans     &trans     &trans    &trans  &kp INS     &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &trans
+                     &trans    &trans     &trans     &trans    &trans  &trans      &trans       &trans
+                                                               &trans
             >;
         };
     };
