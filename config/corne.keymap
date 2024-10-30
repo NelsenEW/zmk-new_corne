@@ -11,6 +11,14 @@
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
 
+&mt {
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    require-prior-idle-ms = <150>;
+    quick-tap-ms = <175>;
+    hold-trigger-key-positions = <>;
+};
+
 / {
     behaviors {
         td0: td0 {
@@ -53,10 +61,10 @@
 
         Base {
             bindings = <
-&trans  &kp Q       &kp W       &kp F        &kp P         &kp B      &kp UP_ARROW      &kp J      &kp L         &kp U         &kp Y         &kp SINGLE_QUOTE  &trans
-&trans  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHIFT T  &kp G      &kp DOWN_ARROW    &kp M      &mt LSHIFT N  &mt LSHIFT E  &mt LALT I    &mt LGUI O        &trans
-&trans  &lt 1 Z     &mt RALT X  &kp C        &kp D         &kp V      &kp LEFT_ARROW    &kp K      &kp H         &kp COMMA     &mt RALT DOT  &lt 1 SLASH       &trans
-                    &trans      &kp ESCAPE   &kp SPACE     &kp TAB    &kp RIGHT_ARROW   &kp ENTER  &kp BSPC      &kp DEL
+&trans  &kp Q       &kp W       &kp F        &kp P         &kp B      &kp UP_ARROW     &kp J      &kp L         &kp U         &kp Y         &kp SINGLE_QUOTE  &trans
+&trans  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHIFT T  &kp G      &kp DOWN_ARROW   &kp M      &mt LSHIFT N  &mt LSHIFT E  &mt LALT I    &mt LGUI O        &trans
+&trans  &lt 1 Z     &mt RALT X  &kp C        &kp D         &kp V      &kp LEFT_ARROW   &kp K      &kp H         &kp COMMA     &mt RALT DOT  &lt 1 SLASH       &trans
+                    &trans      &kp ESCAPE   &kp SPACE     &kp TAB    &kp RIGHT_ARROW  &kp ENTER  &kp BSPC      &kp DEL
                                                                       &kp ENTER
             >;
 
@@ -72,6 +80,8 @@
                     &trans     &mkp MB3    &mkp MB1     &mkp MB2       &mmv MOVE_RIGHT  &mkp MB2     &mkp MB1     &mkp MB3
                                                                        &mkp LCLK
             >;
+
+            label = "button";
         };
 
         Nav {
@@ -80,7 +90,19 @@
 &trans  &kp LGUI     &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &mmv MOVE_DOWN   &kp CAPS    &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &trans
 &trans  &trans       &trans    &trans     &trans     &trans    &mmv MOVE_LEFT   &kp INS     &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &trans
                      &trans    &trans     &trans     &trans    &mmv MOVE_RIGHT  &trans      &trans       &trans
-                                                               &mkp LCLK    
+                                                               &mkp LCLK
+            >;
+
+            label = "nav";
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+                                                  &trans
             >;
         };
     };
