@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -62,7 +63,7 @@
 
         Base {
             bindings = <
-&bt BT_CLR_ALL  &kp Q  &kp W   &kp F       &kp P      &kp B      &kp UP_ARROW     &kp J      &kp L     &kp U      &kp Y         &kp SINGLE_QUOTE  &bt BT_SEL 2
+&bt BT_CLR_ALL  &kp Q  &kp W   &kp F       &kp P      &kp B      &kp UP_ARROW     &kp J      &kp L     &kp U      &kp Y         &kp SINGLE_QUOTE  &out OUT_TOG
 &bt BT_SEL 0    &kp A  &kp R   &kp S       &kp T      &kp G      &kp DOWN_ARROW   &kp M      &kp N     &kp E      &kp I         &kp O             &bt BT_SEL 3
 &bt BT_SEL 1    &kp Z  &kp X   &kp C       &kp D      &kp V      &kp LEFT_ARROW   &kp K      &kp H     &kp COMMA  &mt RALT DOT  &lt 1 SLASH       &bt BT_SEL 4
                        &trans  &kp ESCAPE  &kp SPACE  &kp TAB    &kp RIGHT_ARROW  &kp ENTER  &kp BSPC  &kp DEL
