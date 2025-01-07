@@ -37,7 +37,7 @@ layers:
   - K
   - H
   - {t: ',', s: <}
-  - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
+  - .
   - {t: /, h: button, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
