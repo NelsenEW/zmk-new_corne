@@ -40,6 +40,16 @@
             mods = <(MOD_LSFT)>;
         };
 
+        number_mt: number_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NUMBER_MT";
+            #binding-cells = <2>;
+            tapping-term-ms = <135>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
         mmv {
             acceleration-exponent = <1>;      // 1
             time-to-max-speed-ms = <900>;    // 40
@@ -73,11 +83,11 @@
 
         Base {
             bindings = <
-&none  &mt NUMBER_1 Q    &mt NUMBER_2 W    &mt NUMBER_3 F        &mt NUMBER_4 P        &mt N5 B    &kp UP_ARROW     &mt NUMBER_6 J  &mt N7 L              &mt N8 U               &mt N9 Y           &mt N0 SINGLE_QUOTE  &none
-&none  &hm_l LEFT_GUI A  &hm_l LEFT_ALT R  &hm_l LEFT_CONTROL S  &hm_shift_l LSHIFT T  &kp G       &kp DOWN_ARROW   &kp M           &hm_shift_r RSHIFT N  &hm_r RIGHT_CONTROL E  &hm_r RIGHT_ALT I  &hm_r LEFT_GUI O     &none
-&none  &lt 3 Z           &kp X             &kp C                 &kp D                 &kp V       &kp LEFT_ARROW   &kp K           &kp H                 &kp COMMA              &kp PERIOD         &lt 3 SLASH          &none
-                         &none             &lt 1 ESC             &lt 2 SPACE           &kp TAB     &kp RIGHT_ARROW  &lt 4 ENTER     &lt 5 BACKSPACE       &lt 6 DEL
-                                                                                                   &kp ENTER
+&none  &number_mt NUMBER_1 Q  &number_mt NUMBER_2 W  &number_mt NUMBER_3 F  &number_mt NUMBER_4 P  &number_mt N5 B    &kp UP_ARROW     &number_mt NUMBER_6 J  &number_mt N7 L       &number_mt N8 U        &mt N9 Y           &number_mt N0 SINGLE_QUOTE  &none
+&none  &hm_l LEFT_GUI A       &hm_l LEFT_ALT R       &hm_l LEFT_CONTROL S   &hm_shift_l LSHIFT T   &kp G              &kp DOWN_ARROW   &kp M                  &hm_shift_r RSHIFT N  &hm_r RIGHT_CONTROL E  &hm_r RIGHT_ALT I  &hm_r LEFT_GUI O            &none
+&none  &lt 3 Z                &kp X                  &kp C                  &kp D                  &kp V              &kp LEFT_ARROW   &kp K                  &kp H                 &kp COMMA              &kp PERIOD         &lt 3 SLASH                 &none
+                              &none                  &lt 1 ESC              &lt 2 SPACE            &kp TAB            &kp RIGHT_ARROW  &lt 4 ENTER            &lt 5 BACKSPACE       &lt 6 DEL
+                                                                                                                      &kp ENTER
             >;
 
             label = "colemak_dh";
