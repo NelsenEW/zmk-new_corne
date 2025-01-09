@@ -19,9 +19,9 @@ layers:
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
-  - G
+  - {t: G, h: '='}
   - $$mdi:arrow-down-bold$$
-  - M
+  - {t: M, h: ;}
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: E, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
@@ -29,13 +29,13 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Z, h: button}
-  - X
+  - {t: X, h: '`'}
   - C
-  - D
-  - V
+  - {t: D, h: '-'}
+  - {t: V, h: \}
   - $$mdi:arrow-left-bold$$
-  - K
-  - H
+  - {t: K, h: '['}
+  - {t: H, h: ']'}
   - {t: ',', s: <}
   - .
   - {t: /, h: button, s: '?'}
