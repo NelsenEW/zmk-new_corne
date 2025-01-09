@@ -2,17 +2,17 @@ layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   colemak_dh:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Q
-  - W
-  - F
-  - P
-  - B
+  - {t: Q, h: '1'}
+  - {t: W, h: '2'}
+  - {t: F, h: '3'}
+  - {t: P, h: '4'}
+  - {t: B, h: '5'}
   - $$mdi:arrow-up-bold$$
-  - J
-  - L
-  - U
-  - Y
-  - {t: '''', s: '"'}
+  - {t: J, h: '6'}
+  - {t: L, h: '7'}
+  - {t: U, h: '8'}
+  - {t: Y, h: '9'}
+  - {t: '''', h: '0', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
