@@ -30,7 +30,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Z, h: button}
   - {t: X, h: '`'}
-  - C
+  - {t: C, h: '$$mdi:apple-keyboard-caps$$'}
   - {t: D, h: '-'}
   - {t: V, h: \}
   - $$mdi:arrow-left-bold$$
