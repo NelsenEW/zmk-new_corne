@@ -58,11 +58,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB TOG
-  - RGB EFF
+  - {t: RGB EFF, s: RGB EFR}
   - {t: RGB HUI, s: RGB HUD}
-  - RGB SAI
-  - RGB BRI
-  - RGB SPI
+  - {t: RGB SAI, s: RGB SAD}
+  - {t: RGB BRI, s: RGB BRD}
+  - {t: RGB SPI, s: RGB SPD}
   - {t: '$$mdi:transfer$$', type: trans}
   - LGUI
   - $$mdi:apple-keyboard-option$$
